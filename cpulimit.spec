@@ -1,12 +1,12 @@
 Summary:	CPU usage limiter
 Summary(pl):	Ograniczanie wykorzystania procesora
 Name:		cpulimit
-Version:	1.0
+Version:	1.1
 Release:	0.1
 License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/cpulimit/%{name}-%{version}.tar.gz
-# Source0-md5:	8f8d795f5c6a6b5483da4c200a8df9ee
+# Source0-md5:	f4ff6d4bfaef1258e8f5cd2041e2e2a3
 Source1:	%{name}.1
 URL:		http://cpulimit.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
