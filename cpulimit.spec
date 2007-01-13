@@ -22,9 +22,9 @@ system load, dynamically and quickly.
 %description -l pl
 cpulimit to prosty program ograniczaj±cy zu¿ycie procesora przez
 proces (wyra¿one w procentach, nie w czasie). Jest to przydatne to
-kontrolowania zadañ wsadowych, kiedy nie chcesz, by wykorzystywa³y
-zbyt du¿o mocy procesora. Program ten nie operuje na warto¶ci nice czy
-priorytetach kolejkowania, ale na rzecywistym czasie dzia³ania.
+kontrolowania zadañ wsadowych, ¿eby nie wykorzystywa³y zbyt du¿o mocy
+procesora. Program ten nie operuje na warto¶ci nice czy innych
+priorytetach kolejkowania, ale na rzeczywistym czasie dzia³ania.
 Program jest te¿ w stanie dynamicznie dostosowaæ siê do obci±¿enia
 systemu.
 
@@ -32,7 +32,7 @@ systemu.
 %setup -q
 
 %build
-%{__cc} %{rpmcflags} -lrt cpulimit.c -o cpulimit
+%{__cc} %{rpmldflags} %{rpmcflags} cpulimit.c -o cpulimit -lrt
 
 %install
 rm -rf $RPM_BUILD_ROOT
