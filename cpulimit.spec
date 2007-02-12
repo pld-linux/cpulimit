@@ -1,5 +1,5 @@
 Summary:	CPU usage limiter
-Summary(pl):	Ograniczanie wykorzystania procesora
+Summary(pl.UTF-8):   Ograniczanie wykorzystania procesora
 Name:		cpulimit
 Version:	1.1
 Release:	1
@@ -19,13 +19,13 @@ not act on the nice value or other scheduling priority stuff, but on
 the real cpu usage. Also, it is able to adapt itself to the overall
 system load, dynamically and quickly.
 
-%description -l pl
-cpulimit to prosty program ograniczaj±cy zuøycie procesora przez
-proces (wyraøone w procentach, nie w czasie). Jest to przydatne to
-kontrolowania zadaÒ wsadowych, øeby nie wykorzystywa≥y zbyt duøo mocy
-procesora. Program ten nie operuje na warto∂ci nice czy innych
-priorytetach kolejkowania, ale na rzeczywistym czasie dzia≥ania.
-Program jest teø w stanie dynamicznie dostosowaÊ siÍ do obci±øenia
+%description -l pl.UTF-8
+cpulimit to prosty program ograniczajƒÖcy zu≈ºycie procesora przez
+proces (wyra≈ºone w procentach, nie w czasie). Jest to przydatne to
+kontrolowania zada≈Ñ wsadowych, ≈ºeby nie wykorzystywa≈Çy zbyt du≈ºo mocy
+procesora. Program ten nie operuje na warto≈õci nice czy innych
+priorytetach kolejkowania, ale na rzeczywistym czasie dzia≈Çania.
+Program jest te≈º w stanie dynamicznie dostosowaƒá siƒô do obciƒÖ≈ºenia
 systemu.
 
 %prep
