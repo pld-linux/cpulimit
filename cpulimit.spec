@@ -1,5 +1,5 @@
 Summary:	CPU usage limiter
-Summary(pl.UTF-8):   Ograniczanie wykorzystania procesora
+Summary(pl.UTF-8):	Ograniczanie wykorzystania procesora
 Name:		cpulimit
 Version:	1.1
 Release:	1
