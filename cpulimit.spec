@@ -1,13 +1,12 @@
 Summary:	CPU usage limiter
 Summary(pl.UTF-8):	Ograniczanie wykorzystania procesora
 Name:		cpulimit
-Version:	1.4
+Version:	2.6
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Applications
 Source0:	http://downloads.sourceforge.net/project/limitcpu/limitcpu/%{name}-%{version}.tar.gz
-# Source0-md5:	16c0177cc3d9d27b8653a33ba981c682
-Source1:	%{name}.1
+# Source0-md5:	008b012636007e954de3d5a50b83e540
 URL:		http://limitcpu.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,12 +31,12 @@ systemu.
 %setup -q
 
 %build
-%{__cc} %{rpmldflags} %{rpmcflags} cpulimit.c -o cpulimit -lrt
+%{__cc} %{rpmldflags} %{rpmcflags} -D LINUX cpulimit.c -o cpulimit -lrt -lpthread
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -D cpulimit $RPM_BUILD_ROOT%{_bindir}/cpulimit
-install -D %{SOURCE1} $RPM_BUILD_ROOT%{_mandir}/man1/cpulimit.1
+install -D cpulimit.1 $RPM_BUILD_ROOT%{_mandir}/man1/cpulimit.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
